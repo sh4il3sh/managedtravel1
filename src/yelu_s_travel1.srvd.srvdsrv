@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Def'
+define service YELU_S_TRAVEL1 {
+  expose YELU_C_TRAVEL1;
+}

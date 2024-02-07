@@ -1,0 +1,125 @@
+@Metadata.layer: #CORE
+annotate view YELU_C_TRAVEL1 with
+{
+  @UI.facet: [{
+      id: 'idIdentification',
+      type: #IDENTIFICATION_REFERENCE,
+      position: 10 ,
+      label: 'Travel'
+  }]
+  @UI.lineItem: [{
+      position: 10,
+      importance: #MEDIUM
+       }]
+  @UI.identification: [{
+      position: 10
+   }]
+  TravelID;
+  @UI.lineItem: [{
+      position: 20,
+      importance: #MEDIUM
+       }]
+  @UI.identification: [ {
+    position: 20
+  } ]
+  @Search.defaultSearchElement: true
+  @Consumption.valueHelpDefinition: [{
+    entity: {
+        name: '/DMO/I_Agency_StdVH',
+        element: 'AgencyID'
+    },
+    useForValidation: true
+  }]
+  AgencyID;
+  @UI.lineItem: [{
+    position: 30,
+    importance: #MEDIUM
+     }]
+  @UI.identification: [ {
+    position: 30
+  } ]
+  @Search.defaultSearchElement: true
+  @Consumption.valueHelpDefinition: [{
+    entity: {
+        name: '/DMO/I_Customer_StdVH',
+        element: 'CustomerID'
+    },
+    distinctValues: true,
+    useForValidation: true
+  }]
+  CustomerID;
+  @UI.lineItem: [{
+    position: 40,
+    importance: #MEDIUM
+     }]
+  @UI.identification: [ {
+    position: 40
+  } ]
+  BeginDate;
+  @UI.lineItem: [{
+  position: 50,
+  importance: #MEDIUM
+   }]
+  @UI.identification: [ {
+    position: 50
+  } ]
+  EndDate;
+  @UI.lineItem: [{
+  position: 60,
+  importance: #MEDIUM
+   }]
+  @UI.identification: [ {
+    position: 60
+  } ]
+  BookingFee;
+  @UI.lineItem: [{
+  position: 70,
+  importance: #MEDIUM
+   }]
+  @UI.identification: [ {
+    position: 70
+  } ]
+  TotalPrice;
+  @UI.lineItem: [{
+  position: 80,
+  importance: #MEDIUM
+   }]
+  @UI.identification: [ {
+   position: 80
+  } ]
+  CurrencyCode;
+  @UI.lineItem: [{
+  position: 90,
+  importance: #MEDIUM
+   }]
+  @UI.identification: [ {
+  position: 90
+  } ]
+  Description;
+  @UI.lineItem: [{
+  position: 100,
+  importance: #MEDIUM
+   }]
+  @UI.identification: [ {
+  position: 100
+  } ]
+  OverallStatus;
+  @UI.lineItem: [{
+  position: 110,
+  importance: #MEDIUM
+   }]
+  @UI.identification: [ {
+  position: 110
+  } ]
+  Attachment;
+  @UI.lineItem: [{
+  position: 120,
+  importance: #MEDIUM
+   }]
+  @UI.identification: [ {
+  position: 120
+  } ]
+  Filename;
+
+
+}
